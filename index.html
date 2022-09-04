@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Brown rabbit test</title>
+
+    <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- CDN link for Bootstrap
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+        -->
+    <link rel="stylesheet" href="./css/main.css" type="text/css" />
+    <link rel="stylesheet" href="./css/custom.css" type="text/css" />
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav class="navbar navbar-expand-lg header-navbar navbar-dark bg-black" aria-label="Offcanvas navbar large">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/logo-white.png" class="img-fluid" />
+                    </a>
+                    <div>
+                        <button class="navbar-toggler searchToggle" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar1" aria-controls="offcanvasNavbar1">
+                            <img src="./assets/icons/search.svg" class="img-fluid" width="20" />
+                        </button>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="offcanvas offcanvas-end text-bg-dark desktop-element-only" tabindex="-1"
+                        id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+                        <div class="offcanvas-header">
+                            <div></div>
+                            <button type="button" class="btn-close btn-close-white d-none" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="justify-content-end flex-grow-1 pe-3">
+                                <ul class="navbar-nav justify-content-end">
+                                    <li class="nav-item searchFormBox">
+                                        <form class="search searchForm" role="search">
+                                            <input aria-label="Search" class="form-control me-2" type="search"
+                                                id="myInput" onkeyup="myFunction()" placeholder="Search for names.."
+                                                title="Type in a name" />
+                                            <ul id="searchresults">
+                                                <li class="article">
+                                                    <a href="#">
+                                                        <h5>Wonderful Copenhagen 2021 abc</h5>
+                                                        <p class="small-lable">Published 12/07/2022</p>
+                                                        <p class="summary">Lorem ipsum dolor sit amet, consectetur
+                                                            adipiscing elit. Vestibulum a nisi pellentesque diam
+                                                            varius maximus porta facilisis libero. Ut suscipit eget
+                                                            quam at varius. </p>
+                                                    </a>
+                                                    <hr />
+                                                </li>
+                                                <li class="article">
+                                                    <a href="#">
+                                                        <h5>Wonderful Copenhagen 2021 pik</h5>
+                                                        <p class="small-lable">Published 12/07/2022</p>
+                                                        <p class="summary">Lorem ipsum dolor sit amet, consectetur
+                                                            adipiscing elit. Vestibulum a nisi pellentesque diam
+                                                            varius maximus porta facilisis libero. Ut suscipit eget
+                                                            quam at varius. </p>
+                                                    </a>
+                                                    <hr />
+                                                </li>
+                                                <li class="article">
+                                                    <a href="#">
+                                                        <h5>Wonderful Copenhagen 2021 xyz</h5>
+                                                        <p class="small-lable">Published 12/07/2022</p>
+                                                        <p class="summary">Lorem ipsum dolor sit amet, consectetur
+                                                            adipiscing elit. Vestibulum a nisi pellentesque diam
+                                                            varius maximus porta facilisis libero. Ut suscipit eget
+                                                            quam at varius. </p>
+                                                    </a>
+                                                    <hr />
+                                                </li>
+                                            </ul>
+                                        </form>
+
+
+                                    </li>
+                                    <li class="nav-item desktop-only">
+                                        <a class="nav-link" aria-current="page" href="#">
+                                            <img src="./assets/icons/linkedin-white.svg" />
+                                        </a>
+                                    </li>
+                                    <li class="nav-item desktop-only">
+                                        <a class="nav-link" aria-current="page" href="#">
+                                            <img src="./assets/icons/twitter-white.svg" />
+                                        </a>
+                                    </li>
+                                    <li class="nav-item desktop-only">
+                                        <a class="nav-link" aria-current="page" href="#">
+                                            <img src="./assets/icons/instagram-white.svg" />
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  desktop-only">
+                                        <a class="nav-link" aria-current="page" href="#">
+                                            <img src="./assets/icons/facebook-white.svg" />
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="navbar-nav justify-content-end main-nav-menu">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Events</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " aria-current="page" href="#">Nordie roaster </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Results</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Links</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact</a>
+                                    </li>
+
+                                    <li class="nav-item mobile-only social-media-li">
+                                        <a class="nav-link" aria-current="page" href="#">
+                                            <img src="./assets/icons/linkedin-white.svg" />
+                                        </a>
+                                        <a class="nav-link" aria-current="page" href="#">
+                                            <img src="./assets/icons/twitter-white.svg" />
+                                        </a>
+                                        <a class="nav-link" aria-current="page" href="#">
+                                            <img src="./assets/icons/instagram-white.svg" />
+                                        </a>
+                                        <a class="nav-link" aria-current="page" href="#">
+                                            <img src="./assets/icons/facebook-white.svg" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="offcanvas offcanvas-end text-bg-dark searchToggle mobile-element-only" tabindex="-1"
+                        id="offcanvasNavbar1" aria-labelledby="offcanvasNavbar2Label">
+                        <div class="offcanvas-header">
+                            <div></div>
+                            <button type="button" class="d-none btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="justify-content-end flex-grow-1 pe-3">
+                                <ul class="navbar-nav justify-content-end">
+                                    <li class="nav-item searchFormBox">
+                                        <form class="search searchForm" role="search">
+                                            <input aria-label="Search" class="form-control me-2 mobile-input"
+                                                type="search" id="myInput" onkeyup="myMobileSearchFn()"
+                                                placeholder="Search for names.." title="Type in a name" />
+                                            <ul id="searchresults" class="mobile-search-result">
+                                                <li class="article">
+                                                    <a href="#">
+                                                        <h5>Wonderful Copenhagen 2021 abc</h5>
+                                                        <p class="small-lable">Published 12/07/2022</p>
+                                                        <p class="summary">Lorem ipsum dolor sit amet, consectetur
+                                                            adipiscing elit. Vestibulum a nisi pellentesque diam
+                                                            varius maximus porta facilisis libero. Ut suscipit eget
+                                                            quam at varius. </p>
+                                                    </a>
+                                                    <hr />
+                                                </li>
+                                                <li class="article">
+                                                    <a href="#">
+                                                        <h5>Wonderful Copenhagen 2021 pik</h5>
+                                                        <p class="small-lable">Published 12/07/2022</p>
+                                                        <p class="summary">Lorem ipsum dolor sit amet, consectetur
+                                                            adipiscing elit. Vestibulum a nisi pellentesque diam
+                                                            varius maximus porta facilisis libero. Ut suscipit eget
+                                                            quam at varius. </p>
+                                                    </a>
+                                                    <hr />
+                                                </li>
+                                                <li class="article">
+                                                    <a href="#">
+                                                        <h5>Wonderful Copenhagen 2021 xyz</h5>
+                                                        <p class="small-lable">Published 12/07/2022</p>
+                                                        <p class="summary">Lorem ipsum dolor sit amet, consectetur
+                                                            adipiscing elit. Vestibulum a nisi pellentesque diam
+                                                            varius maximus porta facilisis libero. Ut suscipit eget
+                                                            quam at varius. </p>
+                                                    </a>
+                                                    <hr />
+                                                </li>
+                                            </ul>
+                                        </form>
+
+
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="content-wrapper">
+            <section class="slider-container">
+                <div class="container">
+                    <div class="slider">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"
+                            data-bs-touch="true">
+                            <div class="carousel-inner">
+                                <div data-index="1" class="carousel-item index-1 active">
+                                    <img src="./assets/images/slider/slider-img-1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div data-index="2" class="carousel-item index-2">
+                                    <img src="./assets/images/slider/slider-img-2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div data-index="3" class="carousel-item index-3">
+                                    <img src="./assets/images/slider/slider-img-3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <div class="caption-box">
+                                <p class="caption-text text1 active">"This is a great introduction do the coffee
+                                    industry's best beans on the
+                                    planet"</p>
+                                <p class="caption-text text2">"Coffee in do out, this is a internal day life and
+                                    empowerment of the soul"</p>
+                                <p class="caption-text text3">"To create an environment in which knowledge about
+                                    this coffe and its sphear can be
+                                    obtained"</p>
+                            </div>
+                            <button class="carousel-control-prev carousel-control-btn" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next carousel-control-btn" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="postsection">
+                <div class="container">
+                    <div class="row gx-5">
+                        <div class="col-12 col-md-8 col-lg-9 gx-5">
+                            <div class="postcustom">
+                                <div class="row">
+                                    <div class="col-12 col-md-4 col-lg-3">
+                                        <img src="./assets/images/posts/Post thumbnail-1.png" alt="" />
+                                    </div>
+                                    <div class="col-12 col-md-8 col-lg-9">
+                                        <h3>Wonderful Copenhagen 2021</h3>
+                                        <span>Published 12/07/2021</span>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                            sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                            magna aliquyam erat, sed diam voluptua. At vero eos et
+                                            accusam et justo duo dolores et ea rebum. Stet clita kasd
+                                            gubergren, no sea takimata sanctus est...
+                                        </p>
+                                        <button href="#" class="btn" data-bs-toggle="modal" data-bs-target="#post1">Read
+                                            more</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="postcustom">
+                                <div class="row">
+                                    <div class="col-12 col-md-4 col-lg-3">
+                                        <img src="./assets/images/posts/Post thumbnail-2.png" alt="" />
+                                    </div>
+                                    <div class="col-12 col-md-8 col-lg-9">
+                                        <h3>Wonderful Copenhagen 2021</h3>
+                                        <span>Published 12/07/2021</span>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                            sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                            magna aliquyam erat, sed diam voluptua. At vero eos et
+                                            accusam et justo duo dolores et ea rebum. Stet clita kasd
+                                            gubergren, no sea takimata sanctus est...
+                                        </p>
+                                        <button href="#" class="btn" data-bs-toggle="modal" data-bs-target="#post2">Read
+                                            more</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="postcustom">
+                                <div class="row">
+                                    <div class="col-12 col-md-4 col-lg-3">
+                                        <img src="./assets/images/posts/Post thumbnail-3.png" alt="" />
+                                    </div>
+                                    <div class="col-12 col-md-8 col-lg-9">
+                                        <h3>Wonderful Copenhagen 2021</h3>
+                                        <span>Published 12/07/2021</span>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                            sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                            magna aliquyam erat, sed diam voluptua. At vero eos et
+                                            accusam et justo duo dolores et ea rebum. Stet clita kasd
+                                            gubergren, no sea takimata sanctus est...
+                                        </p>
+                                        <button href="#" class="btn" data-bs-toggle="modal" data-bs-target="#post3">Read
+                                            more</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="postcustom">
+                                <div class="row">
+                                    <div class="col-12 col-md-4 col-lg-3">
+                                        <img src="./assets/images/posts/Post thumbnail-4.png" alt="" />
+                                    </div>
+                                    <div class="col-12 col-md-8 col-lg-9">
+                                        <h3>Wonderful Copenhagen 2021</h3>
+                                        <span>Published 12/07/2021</span>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                            sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                            magna aliquyam erat, sed diam voluptua. At vero eos et
+                                            accusam et justo duo dolores et ea rebum. Stet clita kasd
+                                            gubergren, no sea takimata sanctus est...
+                                        </p>
+                                        <button class="btn" data-bs-toggle="modal" data-bs-target="#post4">Read
+                                            more</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="paginationsection">
+                                <a href="#" class="btn">Previous</a>
+                                <p>Page 1 of 3</p>
+                                <a href="#" class="btn">Next</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 gx-5">
+                            <div class="sidebarwidget">
+                                <h3>WBC Shop</h3>
+                                <p>Your shopping car is empty</p>
+                                <a href="#" class="btn">Visit the shop</a>
+                            </div>
+                            <div class="sidebarwidget">
+                                <h3>Next event</h3>
+                                <h5>World Barista Cup 2021</h5>
+                                <p>Copenhagen, Denmark</p>
+                                <p>Dates: 25th - 27th Auguest 2011</p>
+                                <p>Theme: SENSORY</p>
+                                <a href="#" class="btn">Sign up now</a>
+                            </div>
+                            <div class="sidebarwidget">
+                                <h3>Scoreboard</h3>
+                                <h5>List of winners from last year</h5>
+                                <p>2021 - ?</p>
+                                <p>2020 - Denmark</p>
+                                <p>2021 - Sweden</p>
+                                <p>2021 - Turkey</p>
+                                <p>2021 - Italy</p>
+                                <p>2021 - Italy</p>
+                                <p>2021 - Germany</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="companylogosection">
+                <div class="container">
+                    <h3>World Barista Cup Sponsors</h3>
+                    <div class="companylogo">
+                        <a href="#">
+                            <img src="./assets/images/sponsors/sponsor-1.png" />
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/sponsors/sponsor-2.png" />
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/sponsors/sponsor-3.png" />
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/sponsors/sponsor-4.png" />
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/sponsors/sponsor-5.png" />
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/sponsors/sponsor-6.png" />
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/sponsors/sponsor-7.png" />
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/sponsors/sponsor-8.png" />
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/sponsors/sponsor-9.png" />
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/sponsors/sponsor-10.png" />
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/sponsors/sponsor-11.png" />
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/sponsors/sponsor-12.png" />
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/sponsors/sponsor-13.png" />
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/sponsors/sponsor-14.png" />
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/sponsors/sponsor-15.png" />
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/sponsors/sponsor-16.png" />
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/sponsors/sponsor-17.png" />
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/sponsors/sponsor-18.png" />
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/sponsors/sponsor-19.png" />
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/sponsors/sponsor-20.png" />
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="footersection">
+                    <div class="logosection">
+                        <div class="row gx-5">
+                            <div class="col-12 col-md-8 gx-5">
+                                <img src="./assets/logo-white.png" alt="" />
+                            </div>
+                            <div class="col-12 col-md-4 gx-5">
+                                <ul class="socialicon">
+                                    <li>
+                                        <a href="#">
+                                            <img src="./assets/icons/linkedin-white.svg" alt="" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./assets/icons/twitter-white.svg" alt="" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./assets/icons/instagram-white.svg" alt="" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./assets/icons/facebook-white.svg" alt="" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footercontent">
+                        <div class="row gx-5">
+                            <div class="col-12 col-md-3 col-lg-3 gx-5">
+                                <div class="footerwidget">
+                                    <h3>About World Barista Cup</h3>
+                                    <h6 class="subcontent">
+                                        The vision within The World Barista Cup
+                                    </h6>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                        sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                        magna aliquyam erat, sed diam voluptua. At vero eos et
+                                        accusam et justo duo dolores et ea rebum. Stet clita kasd
+                                        gubergren, no sea takimata sanctus est lorem.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6 gx-5">
+                                <div class="footerwidget insta-widget">
+                                    <h3>Instagram feed</h3>
+                                    <div class="instagram-grid">
+                                        <img src="./assets/images/instagram-feed/instagram-image-1.png" alt="" />
+                                        <img src="./assets/images/instagram-feed/instagram-image-2.png" alt="" />
+                                        <img src="./assets/images/instagram-feed/instagram-image-3.png" alt="" />
+                                        <img src="./assets/images/instagram-feed/instagram-image-4.png" alt="" />
+                                        <img src="./assets/images/instagram-feed/instagram-image-5.png" alt="" />
+                                        <img src="./assets/images/instagram-feed/instagram-image-6.png" alt="" />
+                                        <img src="./assets/images/instagram-feed/instagram-image-7.png" alt="" />
+                                        <img src="./assets/images/instagram-feed/instagram-image-8.png" alt="" />
+                                        <img src="./assets/images/instagram-feed/instagram-image-9.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 col-lg-3 gx-5">
+                                <div class="footerwidget">
+                                    <h3>Contact</h3>
+                                    <h6>World Barista Cup</h6>
+                                    <p class="addressdetail">
+                                        Amagertorv 13<br />1160 Copenhagen K<br />+45 33 12 04
+                                        28<br />CVR: 11427693<br />Email:
+                                        <a href="mailto:info@worldbaristacup.com">
+                                            info@worldbaristacup.com
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Modal -->
+        <div class="modal fade" id="post1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-body p-0">
+                        <div class="card" style="width: 100%;">
+                            <img src="./assets/images/posts/Post thumbnail-1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3>Wonderful Copenhagen 2021</h3>
+                                <span>Published 12/07/2021</span>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                    magna aliquyam erat, sed diam voluptua. At vero eos et
+                                    accusam et justo duo dolores et ea rebum. Stet clita kasd
+                                    gubergren, no sea takimata sanctus est...
+                                </p>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                    piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                                    Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked
+                                    up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+                                    going through the cites of the word in classical literature, discovered the
+                                    undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de
+                                    Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45
+                                    BC. This book is a treatise on the theory of ethics, very popular during the
+                                    Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes
+                                    from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the
+                                    1500s is reproduced below for those
+                                    interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by
+                                    Cicero are also reproduced in their exact original form, accompanied by English
+                                    versions from the 1914 translation by H. Rackham.
+
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                    magna aliquyam erat, sed diam voluptua. At vero eos et
+                                    accusam et justo duo dolores et ea rebum. Stet clita kasd
+                                    gubergren, no sea takimata sanctus est...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="post2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-body p-0">
+                        <div class="card" style="width: 100%;">
+                            <img src="./assets/images/posts/Post thumbnail-2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3>Wonderful Copenhagen 2021</h3>
+                                <span>Published 12/07/2021</span>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                    magna aliquyam erat, sed diam voluptua. At vero eos et
+                                    accusam et justo duo dolores et ea rebum. Stet clita kasd
+                                    gubergren, no sea takimata sanctus est...
+                                </p>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                    piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                                    Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked
+                                    up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+                                    going through the cites of the word in classical literature, discovered the
+                                    undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de
+                                    Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45
+                                    BC. This book is a treatise on the theory of ethics, very popular during the
+                                    Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes
+                                    from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the
+                                    1500s is reproduced below for those
+                                    interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by
+                                    Cicero are also reproduced in their exact original form, accompanied by English
+                                    versions from the 1914 translation by H. Rackham.
+
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                    magna aliquyam erat, sed diam voluptua. At vero eos et
+                                    accusam et justo duo dolores et ea rebum. Stet clita kasd
+                                    gubergren, no sea takimata sanctus est...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="post3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-body p-0">
+                        <div class="card" style="width: 100%;">
+                            <img src="./assets/images/posts/Post thumbnail-3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3>Wonderful Copenhagen 2021</h3>
+                                <span>Published 12/07/2021</span>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                    magna aliquyam erat, sed diam voluptua. At vero eos et
+                                    accusam et justo duo dolores et ea rebum. Stet clita kasd
+                                    gubergren, no sea takimata sanctus est...
+                                </p>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                    piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                                    Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked
+                                    up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+                                    going through the cites of the word in classical literature, discovered the
+                                    undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de
+                                    Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45
+                                    BC. This book is a treatise on the theory of ethics, very popular during the
+                                    Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes
+                                    from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the
+                                    1500s is reproduced below for those
+                                    interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by
+                                    Cicero are also reproduced in their exact original form, accompanied by English
+                                    versions from the 1914 translation by H. Rackham.
+
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                    magna aliquyam erat, sed diam voluptua. At vero eos et
+                                    accusam et justo duo dolores et ea rebum. Stet clita kasd
+                                    gubergren, no sea takimata sanctus est...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="post4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-body p-0">
+                        <div class="card" style="width: 100%;">
+                            <img src="./assets/images/posts/Post thumbnail-4.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3>Wonderful Copenhagen 2021</h3>
+                                <span>Published 12/07/2021</span>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                    magna aliquyam erat, sed diam voluptua. At vero eos et
+                                    accusam et justo duo dolores et ea rebum. Stet clita kasd
+                                    gubergren, no sea takimata sanctus est...
+                                </p>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                    piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                                    Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked
+                                    up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+                                    going through the cites of the word in classical literature, discovered the
+                                    undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de
+                                    Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45
+                                    BC. This book is a treatise on the theory of ethics, very popular during the
+                                    Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes
+                                    from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the
+                                    1500s is reproduced below for those
+                                    interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by
+                                    Cicero are also reproduced in their exact original form, accompanied by English
+                                    versions from the 1914 translation by H. Rackham.
+
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                    magna aliquyam erat, sed diam voluptua. At vero eos et
+                                    accusam et justo duo dolores et ea rebum. Stet clita kasd
+                                    gubergren, no sea takimata sanctus est...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- CDN link for Bootstrap
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+        -->
+
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <script src="js/custom.js" type="text/javascript"></script>
+</body>
+
+</html>
